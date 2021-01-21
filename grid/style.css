@@ -1,0 +1,280 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #e0e0e0;
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body header h1 {
+  text-align: center;
+  font-size: 100px;
+}
+
+body header h3 {
+  text-align: center;
+  font-size: 30px;
+}
+
+body header .menu {
+  margin-top: 11px;
+  border-top: solid #a7a4a4 3px;
+  border-bottom: solid #a7a4a4 3px;
+}
+
+body header .menu ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+body header .menu ul li {
+  padding: 7px;
+  list-style-type: none;
+  text-align: center;
+}
+
+body header .menu ul li:hover {
+  opacity: .2;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+body .containerFirst {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
+  padding-bottom: 20px;
+  border-bottom: solid #a7a4a4 3px;
+  padding-top: 18px;
+}
+
+body .containerFirst .containerFirst-mainPost h2 {
+  margin-top: 5px;
+}
+
+body .containerFirst .containerFirst-mainPost p {
+  margin-top: 5px;
+}
+
+body .containerFirst .containerFirst-posts {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+body .containerFirst .containerFirst-posts .post {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(100, 100) 1fr;
+      grid-template-columns: minmax(100, 100) 1fr;
+  -ms-grid-rows: minmax(100, 100) minmax(100, 100);
+      grid-template-rows: minmax(100, 100) minmax(100, 100);
+      grid-template-areas: "img title" "img text";
+}
+
+body .containerFirst .containerFirst-posts .post img {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: img;
+}
+
+body .containerFirst .containerFirst-posts .post h2 {
+  padding-left: 7px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: title;
+}
+
+body .containerFirst .containerFirst-posts .post p {
+  padding-left: 7px;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: text;
+}
+
+body .containerFirst .containerFirst-posts .no-post h2 {
+  padding-bottom: 5px;
+}
+
+body .containerSecond {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "containerSecond-column containerSecond-right" "containerSecond-bottom containerSecond-right";
+  margin-top: 18px;
+  border-bottom: solid #a7a4a4 3px;
+}
+
+body .containerSecond .containerSecond-column {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: containerSecond-column;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  margin-right: 4px;
+}
+
+body .containerSecond .containerSecond-column .containerSecond-column-Posts {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 25px 1fr 1fr 1fr;
+      grid-template-rows: 25px 1fr 1fr 1fr;
+}
+
+body .containerSecond .containerSecond-column .containerSecond-column-Posts .post {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: max-content(68) 1fr;
+      grid-template-columns: max-content(68) 1fr;
+  -ms-grid-rows: 20px 48px;
+      grid-template-rows: 20px 48px;
+      grid-template-areas: "img title" "img text";
+}
+
+body .containerSecond .containerSecond-column .containerSecond-column-Posts .post img {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: img;
+  border: solid white 4px;
+}
+
+body .containerSecond .containerSecond-column .containerSecond-column-Posts .post h4 {
+  padding-left: 7px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: title;
+}
+
+body .containerSecond .containerSecond-column .containerSecond-column-Posts .post p {
+  padding-left: 7px;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: text;
+  font-size: 12px;
+}
+
+body .containerSecond .containerSecond-bottom {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: containerSecond-bottom;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 45px 1fr;
+      grid-template-rows: 45px 1fr;
+}
+
+body .containerSecond .containerSecond-bottom .menu ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .containerSecond .containerSecond-bottom .menu ul li {
+  list-style-type: none;
+  color: white;
+  background-color: black;
+  text-align: center;
+  margin-right: 4px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+body .containerSecond .containerSecond-bottom .menu ul li:hover {
+  opacity: 0.3;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body .containerSecond .containerSecond-bottom .containerSecond-bottom-posts {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-right: 3px;
+  margin-left: 3px;
+}
+
+body .containerSecond .containerSecond-bottom .containerSecond-bottom-posts .post h3 {
+  color: red;
+  font-size: 16px;
+}
+
+body .containerSecond .containerSecond-bottom .containerSecond-bottom-posts .post p {
+  font-size: 13px;
+}
+
+body .containerSecond .containerSecond-bottom .containerSecond-bottom-posts .post p span {
+  color: red;
+}
+
+body .containerSecond .containerSecond-right {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: containerSecond-right;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+body .containerSecond .containerSecond-right .containerSecond-right-image .gradieng {
+  width: 160px;
+  height: 600px;
+  background-color: dimgrey;
+  margin-right: 7px;
+  margin-top: 7px;
+}
+
+body .containerSecond .containerSecond-right .link {
+  padding-bottom: 18px;
+}
+
+body .containerSecond .containerSecond-right .link ul li {
+  padding: 2px;
+  list-style-type: none;
+  color: red;
+}
+
+body footer {
+  margin-top: 18px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+body footer .footer-text h3 {
+  opacity: .1;
+  border-bottom: solid #a7a4a4 1px;
+}
+
+body footer .footer-text p {
+  color: red;
+  font-size: 13px;
+  margin-top: 18px;
+  margin-bottom: 80px;
+}
+/*# sourceMappingURL=style.css.map */
